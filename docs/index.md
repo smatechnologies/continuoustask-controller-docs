@@ -25,7 +25,7 @@ The ContinuousTaskController never creates Pods directly. It manages Jobs, and t
 the ContinuousTaskController sets spec.suspend: true on the Job, which makes the Job controller terminate its Pods, and then deletes the Job. 
 A task that has already finished can't be cancelled.
 
-![Modifying Definitions Image](../static/img/overview.png)
+![Modifying Definitions Image](../static/img/ct-overview.png)
 
 The general message flow associated with the Continuous Task Controller is as follows:
 
